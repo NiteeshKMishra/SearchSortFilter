@@ -4,6 +4,8 @@ import Header from "./components/Header";
 import SearchInput from "./components/SearchInput";
 import SortInput from "./components/SortInput";
 import Filter from "./components/Filter";
+import PersonCard from "./components/PersonCard";
+import ProductCard from "./components/ProductCard";
 import genericSearch from "./utils/genericSearch";
 import genericSort from "./utils/genericSort";
 import genericFilter from "./utils/genericFilter";
@@ -115,6 +117,18 @@ function App() {
             onFilter={onFilter}
           />
         ))}
+      </div>
+      <div className="person-product-container">
+        {data.map((currentData) =>
+          selectedType === "person" ? (
+            <PersonCard person={currentData as Person} key={currentData.id} />
+          ) : (
+            <ProductCard
+              product={currentData as Product}
+              key={currentData.id}
+            />
+          )
+        )}
       </div>
     </>
   );

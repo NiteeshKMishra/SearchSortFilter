@@ -1,0 +1,31 @@
+.product-root {
+  padding: 1rem;
+  background-color: #f5f5f5;
+  max-width: 600px;
+  margin-bottom: 1rem;
+}
+
+.product-image {
+  max-height: 300px;
+}
+
+.product-basic-info {
+  display: flex;
+  justify-content: space-between;
+  column-gap: 1rem;
+}
+
+.product-info {
+  display: flex;
+  flex-direction: column;
+  row-gap: 0.5rem;
+}
+
+@media (max-width: 600px) {
+  .product-basic-info {
+    display: flex;
+    row-gap: 1rem;
+    flex-direction: column;
+    justify-content: center;
+  }
+}

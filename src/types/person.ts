@@ -4,6 +4,7 @@ export default interface Person {
   lastName: string;
   email: string;
   gender: string;
+  image: string;
   birthDate: Date;
   jobTitle: string;
   jobType: string;

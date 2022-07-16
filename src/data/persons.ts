@@ -6,6 +6,7 @@ export const persons: Person[] = Array.from({ length: 200 }).map(() => ({
   id: faker.datatype.uuid(),
   firstName: faker.name.firstName(),
   lastName: faker.name.lastName(),
+  image: faker.image.people(640, 480),
   gender: faker.name.gender(),
   birthDate: faker.date.birthdate(),
   email: faker.internet.email(),

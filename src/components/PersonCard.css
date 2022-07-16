@@ -1,0 +1,31 @@
+.person-root {
+  padding: 1rem;
+  background-color: #f5f5f5;
+  max-width: 600px;
+  margin-bottom: 1rem;
+}
+
+.person-image {
+  max-height: 250px;
+}
+
+.person-basic-info {
+  display: flex;
+  justify-content: space-between;
+  column-gap: 1rem;
+}
+
+.person-info {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
+}
+
+@media (max-width: 600px) {
+  .person-basic-info {
+    display: flex;
+    row-gap: 1rem;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
