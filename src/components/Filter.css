@@ -1,0 +1,22 @@
+.filter {
+  display: flex;
+  flex-direction: column;
+  row-gap: 0.5rem;
+  padding: 0.5rem;
+  width: 100%;
+}
+
+.filter_label {
+  font-size: 1rem;
+}
+
+.filter_select {
+  padding: 0 1rem;
+  height: 40px;
+  width: 100%;
+}
+
+select.filter_select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}

@@ -1,0 +1,23 @@
+.sort-input {
+  display: flex;
+  flex-direction: column;
+  row-gap: 0.5rem;
+  padding: 1rem;
+  width: 100%;
+}
+
+.sort-input_label {
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.sort-input_select {
+  padding: 0 1rem;
+  height: 40px;
+  width: 100%;
+}
+
+select.sort-input_select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}

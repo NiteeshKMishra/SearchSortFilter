@@ -10,3 +10,10 @@ export default interface Product {
   price: string;
   manufacturedOn: Date;
 }
+
+export const ProductFilterKeys: Array<keyof Product> = [
+  "product",
+  "department",
+  "material",
+  "color",
+];

@@ -16,6 +16,11 @@ const genericSearch = <T>(
         typeof propertyValue === "number"
       ) {
         return propertyValue.toString().toLowerCase().includes(tempSearchInput);
+      } else if (typeof propertyValue === "object") {
+        return Object.values(propertyValue)
+          .join("")
+          .toLowerCase()
+          .includes(tempSearchInput);
       }
       return false;
     })

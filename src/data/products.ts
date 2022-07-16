@@ -7,7 +7,7 @@ export const products: Product[] = Array.from({ length: 200 }).map(() => ({
   product: faker.commerce.product(),
   image: faker.image.image(640, 480),
   name: faker.commerce.productName(),
-  color: faker.commerce.color(),
+  color: faker.color.human(),
   department: faker.commerce.department(),
   description: faker.commerce.productDescription(),
   price: faker.commerce.price(),

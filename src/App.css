@@ -1,0 +1,12 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.search-sort-filter-container {
+  padding: 0 1rem;
+  display: flex;
+  align-items: center;
+  column-gap: 2rem;
+}

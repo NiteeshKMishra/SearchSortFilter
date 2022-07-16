@@ -1,0 +1,19 @@
+.search-input {
+  display: flex;
+  flex-direction: column;
+  row-gap: 0.5rem;
+  padding: 1rem;
+  width: 100%;
+}
+
+.search-input_label {
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.search-input_input {
+  padding: 0 1rem;
+  height: 40px;
+  border-width: 1px;
+  width: 100%;
+}
