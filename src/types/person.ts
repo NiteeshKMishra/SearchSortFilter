@@ -5,7 +5,7 @@ export default interface Person {
   email: string;
   gender: string;
   image: string;
-  birthDate: Date;
+  birthDate: string;
   jobTitle: string;
   jobType: string;
   address: Address;
@@ -17,9 +17,3 @@ export interface Address {
   state: string;
   zipcode: string;
 }
-
-export const PersonFilterKeys: Array<keyof Person> = [
-  "gender",
-  "jobTitle",
-  "jobType",
-];

@@ -3,7 +3,7 @@ const genericSort = <T>(
   property: keyof T,
   isDesc: boolean = false
 ): Array<T> => {
-  return objectArray.sort((objectA, objectB) => {
+  return objectArray.slice().sort((objectA, objectB) => {
     const propertyValueA = objectA[property];
     const propertyValueB = objectB[property];
     if (
@@ -27,6 +27,23 @@ const genericSort = <T>(
         return propertyValueB - propertyValueA;
       } else {
         return propertyValueA - propertyValueB;
+      }
+    } else if (
+      typeof propertyValueA === "object" &&
+      typeof propertyValueB === "object"
+    ) {
+      const propertyValueStrA = Object.values(propertyValueA)
+        .join(" ")
+        .toLowerCase();
+      const propertyValueStrB = Object.values(propertyValueB)
+        .join(" ")
+        .toLowerCase();
+      if (propertyValueStrA < propertyValueStrB) {
+        return isDesc ? 1 : -1;
+      } else if (propertyValueStrA > propertyValueStrB) {
+        return isDesc ? -1 : 1;
+      } else {
+        return 0;
       }
     } else {
       return 0;

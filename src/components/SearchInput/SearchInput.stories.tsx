@@ -1,7 +1,7 @@
 import React from "react";
 import { ComponentStory, ComponentMeta } from "@storybook/react";
 
-import SearchInput from "../components/SearchInput";
+import SearchInput from "./SearchInput";
 
 export default {
   title: "components/SearchInput",

@@ -1,8 +1,8 @@
 import React, { ChangeEvent, useMemo, useState } from "react";
 
-import { SelectOption } from "../types/common";
-import Person from "../types/person";
-import Product from "../types/product";
+import { SelectOption } from "../../types/common";
+import Person from "../../types/person";
+import Product from "../../types/product";
 
 import "./Filter.css";
 

@@ -8,12 +8,5 @@ export default interface Product {
   color: string;
   material: string;
   price: string;
-  manufacturedOn: Date;
+  manufacturedOn: string;
 }
-
-export const ProductFilterKeys: Array<keyof Product> = [
-  "product",
-  "department",
-  "material",
-  "color",
-];

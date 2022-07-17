@@ -6,7 +6,7 @@
 }
 
 .person-image {
-  max-height: 250px;
+  max-height: 300px;
 }
 
 .person-basic-info {
@@ -27,5 +27,11 @@
     row-gap: 1rem;
     flex-direction: column;
     justify-content: center;
+  }
+  .person-info {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+    padding-left: 2rem;
   }
 }

@@ -28,4 +28,10 @@
     flex-direction: column;
     justify-content: center;
   }
+  .product-info {
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.5rem;
+    padding-left: 2rem;
+  }
 }

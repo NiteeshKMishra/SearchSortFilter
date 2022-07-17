@@ -2,7 +2,7 @@ import React from "react";
 import { ComponentStory, ComponentMeta } from "@storybook/react";
 import { faker } from "@faker-js/faker";
 
-import ProductCard from "../components/ProductCard";
+import ProductCard from "./ProductCard";
 
 export default {
   title: "components/ProductCard",
@@ -28,6 +28,6 @@ DefaultProductCard.args = {
     description: faker.commerce.productDescription(),
     price: faker.commerce.price(),
     material: faker.commerce.productMaterial(),
-    manufacturedOn: faker.date.past(),
+    manufacturedOn: faker.date.past().toDateString(),
   },
 };

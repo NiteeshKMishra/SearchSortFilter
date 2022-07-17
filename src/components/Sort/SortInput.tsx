@@ -1,8 +1,8 @@
 import React, { ChangeEvent, useMemo } from "react";
 
-import { SelectOption, SortType } from "../types/common";
-import Person from "../types/person";
-import Product from "../types/product";
+import { SelectOption, SortType } from "../../types/common";
+import Person from "../../types/person";
+import Product from "../../types/product";
 
 import "./SortInput.css";
 

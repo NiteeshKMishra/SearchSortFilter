@@ -1,7 +1,7 @@
 import React from "react";
 import { ComponentStory, ComponentMeta } from "@storybook/react";
 
-import SortInput from "../components/SortInput";
+import SortInput from "./SortInput";
 
 export default {
   title: "components/SortInput",

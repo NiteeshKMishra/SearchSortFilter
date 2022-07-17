@@ -2,8 +2,8 @@ import React from "react";
 import { FaUserAlt } from "react-icons/fa";
 import { FaProductHunt } from "react-icons/fa";
 
-import { ReactComponent as Logo } from "../logo.svg";
-import { ItemType } from "../types/common";
+import { ReactComponent as Logo } from "../../logo.svg";
+import { ItemType } from "../../types/common";
 
 import "./Header.css";
 
