@@ -16,7 +16,7 @@ function Header(props: HeaderProps) {
   const { selectedType, onItemClick } = props;
 
   return (
-    <div className="header">
+    <div className="header" data-testid="header">
       <Logo />
       <div
         className="header-item"

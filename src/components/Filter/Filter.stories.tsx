@@ -16,13 +16,13 @@ const Template: ComponentStory<typeof Filter> = (args) => <Filter {...args} />;
 export const FilterPersonGender = Template.bind({});
 FilterPersonGender.args = {
   //@ts-ignore
-  label: "Gender",
+  property: "Gender",
   options: ["Male", "Female"],
 };
 
 export const FilterProductColor = Template.bind({});
 FilterProductColor.args = {
   //@ts-ignore
-  label: "Color",
+  property: "Color",
   options: ["Red", "Blue", "White", "Green"],
 };

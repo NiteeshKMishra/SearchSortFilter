@@ -16,7 +16,7 @@ const ProductCard = (props: ProductProps) => {
   }
 
   return (
-    <div className="product-root">
+    <div className="product-root" data-testid={`product-card-${product.id}`}>
       <div className="product-basic-info">
         <img
           alt={`${product.product}`}

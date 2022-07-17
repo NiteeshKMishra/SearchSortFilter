@@ -39,7 +39,7 @@ function Filters(props: FilterProps) {
   };
 
   return (
-    <div className="filter">
+    <div className="filter" data-testid="filter-container">
       <label htmlFor="filter" className="filter_label">
         Filter by{" "}
         {`${String(property)[0].toUpperCase()}${String(property)

@@ -16,7 +16,7 @@ const PersonCard = (props: PersonProps) => {
   }
 
   return (
-    <div className="person-root">
+    <div className="person-root" data-testid={`person-card-${person.id}`}>
       <div className="person-basic-info">
         <img
           alt={`${person.firstName} ${person.lastName}`}
